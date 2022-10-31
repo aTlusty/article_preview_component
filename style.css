@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+}
+
+:root{
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --white: hsl(250, 100%, 100%);
+    --gray: hsl(214, 8%, 41%);
+}
+
+body{
+    background-color: var(--light-grayish-blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--white);
+    display: flex;
+    height: 400px;
+    width: 1150px;
+    border-radius: 25px;
+}
+
+.photo{
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.text-container{
+    margin-bottom: 30px;
+}
+
+h1{
+    color: var(--gray);
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.description{
+    color: var(--grayish-blue);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.avatar-container{
+    display: flex;
+    position: relative;
+}
+
+.avatar{
+    object-fit: contain;
+    object-position: center;
+    width: 60px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.name{
+    color: var(--very-dark-grayish-blue);
+    font-weight: bold;
+    letter-spacing: .04em;
+}
+
+.date{
+    font-size: 14px;
+    color: var(--grayish-blue);
+}
+
+.btn-container{
+    position: relative;
+}
+
+.btn{
+    border: none;
+    position: absolute;
+    background-color: var(--light-grayish-blue);
+    padding: 20px;
+    top: 10px;
+    right: -300px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.share{
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+    width: 20px;
+    top: 10px;
+    left: 11px;
+}
+
+.icons-container{
+    position: absolute;
+    justify-content: space-evenly;
+    background-color: var(--very-dark-grayish-blue);
+    width: 300px;
+    padding: 15px 0;
+    top: -90px;
+    right: -420px;
+    border-radius: 10px;
+    display: none;
+}
+
+.active{
+    display: flex;
+}
+
+.active-btn{
+    background-color: var(--grayish-blue);
+    transition: .5s;
+}
+
+.share-text{
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+
+.attribution{
+    margin-top: 30px;
+}
